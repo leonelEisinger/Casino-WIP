@@ -7,11 +7,9 @@ $(document).ready(function() {
 
         if (selectedTheme === 'dark' && !isDarkTheme) {
             $('#theme-stylesheet').attr('href', 'css/dark-theme.css');
-            $('#themeDropdown').text('Switch to Light Theme');
             isDarkTheme = true;
         } else if (selectedTheme === 'light' && isDarkTheme) {
             $('#theme-stylesheet').attr('href', 'css/light-theme.css');
-            $('#themeDropdown').text('Switch to Dark Theme');
             isDarkTheme = false;
         }
     });
